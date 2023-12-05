@@ -16,7 +16,7 @@ import {
   DialogActions,
 } from "@material-ui/core";
 
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 export const App = () => {
   const [popupstate, setpopstate] = useState(false);
   const [isVisible, setIsVisible] = useState(false);
@@ -53,13 +53,13 @@ export const App = () => {
   //  MAIN LOGOUT FUNCTION
   const Logout = () => {
     // navigate("/TaskForm");
-    Meteor.logout();
-    //   <BrowserRouter>
-    //   <Routes>
-    //     <Route path="/Login" element={<LoginForm/>}>
-    //     </Route>
-    //   </Routes>
-    // </BrowserRouter>
+    // Meteor.logout();
+      <BrowserRouter>
+      <Routes>
+        <Route path="/Login" element={<LoginForm/>}>
+        </Route>
+      </Routes>
+    </BrowserRouter>
     handleclose();
   };
 
