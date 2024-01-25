@@ -53,14 +53,14 @@ export const App = () => {
   //  MAIN LOGOUT FUNCTION
   const Logout = () => {
     // navigate("/TaskForm");
-    // Meteor.logout();
-      <BrowserRouter>
-      <Routes>
-        <Route path="/Login" element={<LoginForm/>}>
-        </Route>
-      </Routes>
-    </BrowserRouter>
-    handleclose();
+    Meteor.logout();
+    //   <BrowserRouter>
+    //   <Routes>
+    //     <Route path="/Login" element={<LoginForm/>}>
+    //     </Route>
+    //   </Routes>
+    // </BrowserRouter>
+    // handleclose();
   };
 
   const handlelogout = () => {
